@@ -1,0 +1,62 @@
+#大物实验报告##latex模板#
+
+\documentclass{article}  
+\usepackage{ctex} % 使用ctex宏包以支持中文  
+\usepackage{graphicx} % 插入图片的宏包  
+\usepackage{caption} % 定制图表标题的宏包  
+\usepackage{subcaption} % 支持子图表标题的宏包  
+\usepackage{wrapfig} % 加载wrapfig宏包  
+\usepackage{diagbox} % 斜线分区
+\usepackage{float}
+
+
+\makeatletter  
+\newcommand{\rmnum}[1]{\romannumeral #1}  
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}  
+\makeatother
+% 设置页边距等页面参数（可选）  
+\usepackage{geometry}  
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}  
+\usepackage{fancyhdr} % 引入fancyhdr宏包  
+% 设置页眉
+\pagestyle{fancy} % 设置页面样式为fancy  
+\fancyhf{} % 清除页眉和页脚的现有内容  
+\fancyhead[L]{\leftmark} % 在左侧页眉插入章节标题  
+\fancyhead[R]{\thepage} % 在右侧页眉插入页码  
+%
+% 标题、作者、日期（可选）  
+%\title{2024年3月6日实验直流单臂测电阻报告}  
+%\author{CZJi}
+
+%\date{\today}
+
+
+\begin{document} 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{下载.png}
+    \label{fig:enter-label}
+\end{figure}
+  
+%\maketitle % 生成标题
+\begin{titlepage}  
+\centering  
+{\huge 标题}  
+
+\vskip 1cm  
+  
+{\large 姓名：}  
+
+\vskip 1cm
+
+{\large 学号：}
+
+\vskip 1cm  
+
+{\large 专业：}
+\vskip 1cm
+  
+{\large \today}
+\end{titlepage}
+
